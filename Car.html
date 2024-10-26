@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Cars_files/style.css">
+    <title>Cars - Shree Shyam Tours & Travels</title>
+</head>
+<body>
+
+<!-- Include the header -->
+<div id="header"></div>
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/ss5.jpg'); height: 738px;" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start" style="height: 738px;">
+            <div class="col-md-9 ftco-animate pb-5 fadeInUp ftco-animated">
+                <p class="breadcrumbs"><span class="mr-2"><a href="Index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Cars <i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread">Choose Your Car</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-no-pt bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 heading-section text-center ftco-animate mb-5 fadeInUp ftco-animated">
+                <span class="subheading">What we offer</span>
+                <h2 class="mb-2">Our Featured Vehicles Plans</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Car cards go here -->
+            <!-- Repeat this block for each car -->
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="card" style="width:330px">
+                    <img class="card-img-top" src="./IndexAsset/swift.jpg" alt="Maruti Swift Dezire" style="width:100%; height:200px">
+                    <div class="card-body">
+                        <h4 class="card-title">Maruti Swift Dezire</h4>
+                        <div class="d-flex mb-3">
+                            <span class="cat">Rate</span>
+                            <p class="price ml-auto">Rs 10 <span>/Km</span></p>
+                        </div>
+                        <p class="d-flex mb-0 d-block">
+                            <a href="tel:+919179789445" class="btn btn-secondary py-2 ml-1">Call Now</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of car card block -->
+            <!-- Add more car cards as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Include the footer -->
+<div id="footer"></div>
+
+<!-- Scripts -->
+<script src="./Cars_files/jquery.min.js.download"></script>
+<script src="./Cars_files/jquery-migrate-3.0.1.min.js.download"></script>
+<script src="./Cars_files/popper.min.js.download"></script>
+<script src="./Cars_files/bootstrap.min.js.download"></script>
+<script src="./Cars_files/jquery.easing.1.3.js.download"></script>
+<script src="./Cars_files/jquery.waypoints.min.js.download"></script>
+<script src="./Cars_files/jquery.stellar.min.js.download"></script>
+<script src="./Cars_files/owl.carousel.min.js.download"></script>
+<script src="./Cars_files/jquery.magnific-popup.min.js.download"></script>
+<script src="./Cars_files/aos.js.download"></script>
+<script src="./Cars_files/jquery.animateNumber.min.js.download"></script>
+<script src="./Cars_files/bootstrap-datepicker.js.download"></script>
+<script src="./Cars_files/jquery.timepicker.min.js.download"></script>
+<script src="./Cars_files/scrollax.min.js.download"></script>
+<script src="./Cars_files/google-map.js.download"></script>
+<script src="./Cars_files/main.js.download"></script>
+
+<script>
+    function loadHeader() {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    }
+
+    function loadFooter() {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    }
+
+    loadHeader();
+    loadFooter();
+</script>
+
+</body>
+</html
